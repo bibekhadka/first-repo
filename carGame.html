@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+.main-div {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	background-image: url(road.png);
+	background-repeat: repeat-y;
+}
+.car {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+.main-div {
+	height: 600px;
+	width: 300px;
+	overflow: hidden;
+	position:relative;
+}
+.car {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-image: url(opponent.png);
+}
+.own-car {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 100px;
+	top: 500px;
+	background-image: url(own-car.png);
+}
+p{
+	color:#0F0;
+	line-height:100px;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<div id="road" class="main-div clearfix">
+  <div id="maincar" class="own-car"></div>
+</div>
+<script src="carGame-script.js" type="text/javascript"></script>
+</body>
+</html>
